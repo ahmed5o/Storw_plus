@@ -1,9 +1,21 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.3.0") // نسخة Gradle مناسبة
+        classpath("com.google.gms:google-services:4.4.0") // Firebase
+    }
+}
+
 allprojects {
     repositories {
         google()
         mavenCentral()
     }
 }
+
 
 val newBuildDir: Directory =
     rootProject.layout.buildDirectory
